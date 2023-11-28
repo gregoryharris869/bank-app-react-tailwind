@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
 
@@ -10,12 +9,12 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between w-full py-6 navbar">
       <img src={logo} alt="hoobank" className="w-[124px] h-[32px]" />
-
+      {/* Mobile dash bar */}
       <ul className="items-center justify-end flex-1 hidden list-none sm:flex">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${
+            className={`font-poppins font-normal cursor-pointer text-base ${
               active === nav.title ? "text-white" : "text-dimWhite"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}

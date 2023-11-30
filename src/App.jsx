@@ -1,16 +1,14 @@
 import styles from "./styles";
-import {
-  Navbar,
-  Hero,
-  Stats,
-  Business,
-  Billing,
-  CardDeal,
-  Testimonials,
-  Clients,
-  CallTA,
-  Footer,
-} from "./components";
+import Navbar from "./components/Navbar";
+import Billing from "./components/Billing";
+import CardDeal from "./components/CardDeal";
+import Business from "./components/Business";
+import Clients from "./components/Clients";
+import CallTA from "./components/CallTA";
+import Stats from "./components/Stats";
+import Footer from "./components/Footer";
+import Testimonials from "./components/Testimonials";
+import Hero from "./components/Hero";
 
 const App = () => (
   <div className="w-full overflow-hidden bg-primary">

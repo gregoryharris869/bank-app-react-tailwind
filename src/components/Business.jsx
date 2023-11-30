@@ -38,7 +38,7 @@ const Business = () => (
         credit cards on the market.
       </p>
 
-      <Button styles={`mt-10`} />
+      <Button />
     </div>
 
     <div className={`${layout.sectionImg} flex-col`}>
